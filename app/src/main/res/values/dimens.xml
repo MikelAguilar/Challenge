@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--Tipografía-->
+    <dimen name="body14">14sp</dimen>
+    <dimen name="subtitulo20">20sp</dimen>
+    <dimen name="titulo24">24sp</dimen>
+    <dimen name="edittext16">16sp</dimen>
+    <dimen name="textoPequeno12">12sp</dimen>
+    <dimen name="extraChica10">10sp</dimen>
+    <dimen name="especial32">32sp</dimen>
+    <dimen name="ultraChiica">7sp</dimen>
+
+
+    <!--Margenes-->
+    <dimen name="mLateral20">20sp</dimen>
+    <dimen name="mSuperiorTitulo15">15sp</dimen>
+    <dimen name="mInferiorGrupo5">5sp</dimen>
+    <dimen name="mInferior2sp">2sp</dimen>
+    <dimen name="mmLateral10">10sp</dimen>
+    <dimen name="mLayoutGeneral20">20sp</dimen>
+    <dimen name="mLateral10">10sp</dimen>
+    <dimen name="mSuperior10">10sp</dimen>
+    <dimen name="mInferior10">10sp</dimen>
+    <dimen name="tamanoTituloPrincipal70">70sp</dimen>
+
+    <!--Padding botones-->
+    <dimen name="botonTop35">35sp</dimen>
+    <dimen name="paddingEtiquetas11sp">11sp</dimen>
+    <dimen name="paddingEdittext10sp">10sp</dimen>
+    
+</resources>

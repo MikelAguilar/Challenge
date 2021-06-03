@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Challenge</string>
+    <string name="verMas"><![CDATA[Ver más >>]]></string>
+    <string name="descripcion"><b>Descripción:</b>\n %s</string>
+    <string name="tagline">Tagline</string>
+    <string name="firstBrewed">First brewed</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="brewedTips"><b>Brewed Tips:</b> %s</string>
+    <string name="nombre"><b>Nombre:</b> %s</string>
+</resources>

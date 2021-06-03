@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.miguelaguilar.challenge.ui.viewModel.GeneralViewModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.activity.DetailsActivity"
+                android:layout_margin="@dimen/mLateral20">
+
+                <ImageView
+                    android:id="@+id/imagenBeer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintDimensionRatio="H,1:1"
+
+                    />
+
+                <TextView
+                    android:id="@+id/nombrebeer"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nombre"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imagenBeer"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittext16"
+                    />
+
+                <TextView
+                    android:id="@+id/descripcion"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/descripcion"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nombrebeer"
+                    android:layout_marginTop="@dimen/mSuperior10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittext16"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/parentLFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/descripcion"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mSuperior10"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittext16"
+                            android:text="@string/tagline"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/tagline"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/mInferiorGrupo5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittext16"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mSuperior10"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginStart="@dimen/mInferiorGrupo5"
+                        android:layout_marginEnd="@dimen/mInferiorGrupo5"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittext16"
+                            android:text="@string/firstBrewed"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/first"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/mInferiorGrupo5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittext16"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mSuperior10"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittext16"
+                            android:text="@string/firstBrewed"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/food"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/mInferiorGrupo5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittext16"
+                            android:gravity="center"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtIngredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittext16"
+                    android:text="@string/ingredientes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/parentLFood"
+                    android:layout_marginTop="@dimen/mSuperior10"
+
+                    />
+
+                <TextView
+                    android:id="@+id/ingredientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtIngredientes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittext16"
+                    android:layout_marginTop="@dimen/mInferiorGrupo5"
+
+                    />
+
+                <TextView
+                    android:id="@+id/brewedTips"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edittext16"
+                    android:text="@string/brewedTips"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/ingredientes"
+                    android:layout_marginTop="@dimen/mSuperior10"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+
+</layout>
